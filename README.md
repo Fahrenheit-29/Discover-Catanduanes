@@ -8,7 +8,7 @@
 
 ## USER INTERFACE DESIGN
 
-![HomePage](WireFrame/Main_Page.png)
+![HomePage](WireFrame/Main-Website.png)
 
 
 ## Technology Used
