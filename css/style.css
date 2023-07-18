@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:ital,wght@1,100&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap'); */
+
+
+/* font-family: 'Poppins', sans-serif ,font-family: 'Roboto', sans-serif;  ,  font-family: 'Dancing Script', cursive; */
+
+
+/* Color Scheme and Fonts
+
+
+#116DFF , #2573DA
+
+#F2F2F2
+
+#696969
+
+
+Poppins
+Payton One
+Roboto
+
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border;
+}
+
+.h6 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* #smooth {
+    font-family: 'Dancing Script', cursive;
+} */
+
+.container {
+    font-family: 'Poppins'
+}
+
+
+/* Title */
+
+.Title {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.navbar .navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .navbar-brand img {
+    max-width: 30%;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: black;
+    margin-right: 50px;
+    letter-spacing: 1px;
+    font-size: .9rem;
+}
+
+
+/* sliders */
+
+#carousel-hero-section .carousel-inner {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #0000;
+}
+
+#carousel-hero-section .carousel-inner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+#carousel-hero-section .carousel-inner .carousel-item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url("../Carousel_Image/Tuwad\ Tuwadan\ Lagoon\ \(2\).jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+#carousel-hero-section .carousel-inner .carousel-item:nth-child(2) {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url("../Carousel_Image/Virac\ Twin\ Rock2.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+#carousel-hero-section .carousel-inner .carousel-item:nth-child(3) {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url("../Carousel_Image/Binurong\ Point\ Baras.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+
+
+/* carousel title */
+
+#carousel-hero-section .carousel-inner .carousel-item .carousel-content {
+    color: white;
+    position: absolute;
+    top: 10%;
+    transform: translate(33%, 80%);
+    max-width: 800px;
+    z-index: 122;
+    /* font-family: 'Paytone One', sans-serif; */
+    text-align: center;
+}
+
+#carousel-hero-section .carousel-inner .carousel-item .carousel-content h1 {
+    font-size: 3.5rem;
+    letter-spacing: 20px;
+    font-weight: 700;
+}
+
+#carousel-hero-section .carousel-inner .carousel-item .carousel-content h2 {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+#carousel-hero-section .carousel-inner .carousel-item .carousel-content p {
+    font-weight: 300;
+    padding: 10px 0px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    left: -25px;
+}
+
+
+/* CTA */
+
+.ctaBtn {
+    background: linear-gradient(168.99deg, #00a4e5 17.86%, #006fc1 87.93%);
+    color: #ffffff;
+}
+
+
+/* subheadlines */
+
+.sub-headlines {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.sub-headlines h3 {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.sub-headlines p {
+    font-size: .95rem;
+    font-weight: 400;
+}
+
+
+/* popular destination section */
+
+.popular-places {
+    overflow: hidden;
+}
+
+.popular-places img {
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    transition: all 1.1s;
+    min-height: 400px;
+}
+
+.popular-places:hover img {
+    transform: scale(1.3);
+}
+
+
+/* location tag */
+
+.location-tag {
+    padding: 5px;
+    letter-spacing: 2px;
+    font-size: .8rem;
+    color: grey;
+    font-weight: 400;
+}
+
+.location-tag i {
+    padding-right: 5px;
+}
+
+
+/* destination guide section */
+
+.destination-guide {
+    margin: 30px auto;
+    line-height: 1.8;
+}
+
+.destination-guide p {
+    text-align: justify;
+    font-size: .95rem;
+    font-weight: 400;
+}
+
+.destination-highlights {
+    cursor: pointer;
+}
+
+.destination-highlights img {
+    border-radius: 5px;
+}
+
+.destination-preview {
+    display: flex;
+    width: 25%;
+}
+
+.destination-preview img {
+    min-height: 100px;
+    border-radius: 0;
+    transition: all 1.1s;
+}
+
+
+/* javascript destination guide section */
+
+.readMoreText {
+    display: none;
+}
+
+.readmore-text p {
+    display: none;
+}
+
+
+/* javascript destination guide section */
+
+
+/* accordion */
+
+.accordion-title {
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.accordion-content p,
+.accordion-content ul li {
+    font-size: .9rem;
+    line-height: 1.5;
+    padding: 10px 0px;
+}
+
+.accordionData button {
+    text-align: left;
+    font-weight: 400;
+    width: 100%;
+    border: none;
+    margin: 5px 0px;
+    /* background-color: linear-gradient(168.99deg, #00a4e5 17.86%, #006fc1 87.93%);
+     */
+    /* border-radius: 5px; */
+    padding: 10px 15px;
+    font-size: .9rem;
+}
+
+.accordionData button::after {
+    content: '\002B';
+    color: black;
+    float: right;
+    font-size: 1rem;
+}
+
+.accordionData .accordion-content {
+    display: none;
+    transition: all 1.1s ease;
+}
+
+
+/* javascript for faq accordion section */
+
+.accordionData .active {
+    background-color: gainsboro;
+}
+
+.accordionData .active::after {
+    content: "\2796";
+    font-size: .7rem;
+}
+
+
+/* .testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+} */
+
+.testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+#testimonial-section .card-content h4 {
+    font-size: 1.3rem;
+}
+
+#testimonial-section .card-content p {
+    font-size: .95rem;
+}
+
+
+/* footer */
+
+footer {
+    font-size: .9rem;
+}
+
+.footer-logo img {
+    max-width: 40%;
+    border-radius: 50%;
+}
+
+.footer-sitemap h5 {
+    text-align: center;
+}
+
+.footer-sitemap ul li {
+    cursor: pointer;
+    list-style-type: none;
+    margin: 10px 0px;
+}
+
+.footer-sitemap ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+}
+
+.footer-sitemap ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(217, 243, 217, .8);
+    width: 100%;
+    height: .075rem;
+    transform: scale(0, 1);
+    transition: transform ease-in 0.3s;
+}
+
+.footer-sitemap ul li a:hover::after {
+    transform: scale(1, 1);
+}
+
+.footer-icons {
+    text-align: center;
+}
+
+.footer-icons a {
+    margin: 10px 7px;
+}
+
+.Copyright {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.Copyright span {
+    color: gray;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 575px) {
+    /* navigation section */
+    .navbar .navbar-brand img {
+        max-width: 40%;
+        margin-bottom: 10px;
+    }
+    .navbar-nav .nav-item .nav-link {
+        margin-top: 8px;
+    }
+    /* sliders */
+    #carousel-hero-section .carousel-inner {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background: #0000;
+    }
+    #carousel-hero-section .carousel-inner:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 1;
+    }
+    #carousel-hero-section .carousel-inner .carousel-item {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background: url("../Carousel_Image/Tuwad\ Tuwadan\ Lagoon\ \(2\).jpg") no-repeat center;
+        background-size: 100% 100%;
+    }
+    #carousel-hero-section .carousel-inner .carousel-item:nth-child(2) {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background: url("../Carousel_Image/Virac\ Twin\ Rock2.jpg") no-repeat center;
+        background-size: cover;
+    }
+    #carousel-hero-section .carousel-inner .carousel-item:nth-child(3) {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background: url("../Carousel_Image/Binurong\ Point\ Baras.jpg") no-repeat center;
+        background-size: 100% 100%;
+    }
+    /* carousel title */
+    #carousel-hero-section .carousel-inner .carousel-item .carousel-content {
+        color: white;
+        position: relative;
+        top: 40%;
+        transform: none;
+        max-width: 800px;
+        z-index: 122;
+        /* font-family: 'Paytone One', sans-serif; */
+        text-align: center;
+    }
+    #carousel-hero-section .carousel-inner .carousel-item .carousel-content h1 {
+        font-size: 2rem;
+        letter-spacing: 10px;
+        font-weight: 700;
+    }
+    #carousel-hero-section .carousel-inner .carousel-item .carousel-content h2 {
+        font-weight: 400;
+        font-size: 22px;
+    }
+    #carousel-hero-section .carousel-inner .carousel-item .carousel-content p {
+        font-weight: 300;
+        padding: 10px 0px;
+    }
+    .ctaBtn {
+        background: linear-gradient(168.99deg, #00a4e5 17.86%, #006fc1 87.93%);
+        color: #ffffff;
+        font-size: .9rem;
+    }
+    /* subheadlines */
+    .sub-headlines h3 {
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+    .sub-headlines p {
+        font-size: .9rem;
+        font-weight: 400;
+    }
+    sub-headline-image {
+        width: 50%;
+    }
+    .popular-places img {
+        cursor: pointer;
+        max-width: 100%;
+        display: block;
+        border-radius: 5px;
+        transition: all 1.1s;
+        height: auto;
+        transform: scale(1);
+    }
+    /* location tag */
+    .location-tag {
+        padding: 5px;
+        letter-spacing: 2px;
+        font-size: .8rem;
+        color: grey;
+        font-weight: 400;
+    }
+    .location-tag i {
+        padding-right: 5px;
+    }
+    /* destination guide section */
+    .destination-guide {
+        margin: 30px auto;
+        line-height: 1.8;
+    }
+    .destination-guide p,
+    .destination-guide ul li {
+        font-size: .9rem;
+    }
+    .destination-guide button {
+        margin: 10px 0px;
+    }
+    .destination-preview img {
+        min-height: auto;
+    }
+    /* accordion */
+    .accordion-title {
+        font-size: 1.1rem;
+        margin: 15px 0px;
+    }
+    .accordionImg {
+        display: none;
+    }
+    .testimonial-card .avatar {
+        width: 110px;
+        margin-top: 10px;
+        overflow: hidden;
+        border: 3px solid #fff;
+        border-radius: 50%;
+    }
+    #testimonial-section .card-content h4 {
+        font-size: 1.1rem;
+    }
+    #testimonial-section .card-content p {
+        font-size: .9rem;
+    }
+    /* footer */
+    footer {
+        font-size: .9rem;
+    }
+    footer h5 {
+        font-size: 1.1rem;
+    }
+    .footer-logo img {
+        max-width: 25%;
+        margin: 10px auto;
+        display: block;
+        border-radius: 50%;
+    }
+    .footer-sitemap {
+        display: none;
+    }
+    .footer-icons a {
+        margin: 10px 7px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .navbar .navbar-brand img {
+        max-width: 100%;
+        margin-bottom: 10px;
+        display: block;
+    }
+    /* sliders */
+    /* carousel title */
+    #carousel-hero-section .carousel-inner .carousel-item .carousel-content {
+        color: white;
+        position: relative;
+        top: 40%;
+        transform: none;
+        max-width: 800px;
+        z-index: 122;
+        /* font-family: 'Paytone One', sans-serif; */
+        text-align: center;
+    }
+    #carousel-hero-section .carousel-inner .carousel-item .carousel-content h1 {
+        font-size: 2.7rem;
+        letter-spacing: 15px;
+        font-weight: 700;
+    }
+    #carousel-hero-section .carousel-inner .carousel-item .carousel-content h2 {
+        font-size: 26px;
+    }
+    #carousel-hero-section .carousel-inner .carousel-item .carousel-content p {
+        padding: 10px 0px;
+    }
+    .ctaBtn {
+        font-size: .95rem;
+    }
+    /* subheadlines */
+    .sub-headlines h3 {
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+    .sub-headlines p {
+        font-size: .95rem;
+    }
+    sub-headline-image {
+        width: 50%;
+    }
+    .popular-places img {
+        cursor: pointer;
+        max-width: 100%;
+        display: block;
+        border-radius: 5px;
+        transition: all 1.1s;
+        height: auto;
+        transform: scale(1);
+    }
+    /* location tag */
+    .location-tag {
+        padding: 5px;
+        letter-spacing: 2px;
+        font-size: .9rem;
+        color: grey;
+        font-weight: 400;
+    }
+    .location-tag i {
+        padding-right: 5px;
+    }
+    /* destination guide section */
+    .destination-guide {
+        margin: 30px auto;
+        line-height: 1.8;
+    }
+    .destination-guide p,
+    .destination-guide ul li {
+        font-size: .95rem;
+    }
+    .destination-guide button {
+        margin: 10px 0px;
+    }
+    .destination-preview img {
+        min-height: auto;
+    }
+    /* accordion */
+    .accordion-title {
+        font-size: 1.1rem;
+        margin: 15px 0px;
+    }
+    .accordionImg {
+        display: block;
+    }
+    .testimonial-card .avatar {
+        width: 110px;
+        margin-top: 10px;
+        overflow: hidden;
+        border: 3px solid #fff;
+        border-radius: 50%;
+    }
+    #testimonial-section .card-content h4 {
+        font-size: 1.2rem;
+    }
+    #testimonial-section .card-content p {
+        font-size: .95rem;
+    }
+    /* footer */
+    footer {
+        font-size: .95rem;
+    }
+    footer h5 {
+        font-size: 1.1rem;
+    }
+    .footer-logo img {
+        max-width: 25%;
+        margin: 10px auto;
+        display: block;
+        border-radius: 50%;
+    }
+    .footer-sitemap {
+        display: block;
+    }
+    .footer-icons a {
+        margin: 10px 7px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 991px) {
+    #carousel-hero-section .carousel-inner .carousel-item .carousel-content {
+        color: white;
+        position: absolute;
+        top: 30%;
+        left: 8%;
+        transform: unset;
+        max-width: 800px;
+        z-index: 122;
+        /* font-family: 'Paytone One', sans-serif; */
+        text-align: center;
+    }
+}
